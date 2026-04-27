@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Anniversary Mom & Dad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe6f0 0%, #ffd6eb 50%, #fff0f5 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #5a4a3a;
+      position: relative;
+      background-image: url("Anniversary/download.jpeg");
+      background-repeat: repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb0 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+
+    .header .subtitle {
+      font-size: 1.3rem;
+      color: #fff0f5;
+      font-style: italic;
+    }
+
+    .header .years {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 30px;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 30px;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    /* Message Section */
+    .message {
+      text-align: center;
+      padding: 30px;
+      margin-bottom: 40px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .message p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #624a3c;
+    }
+
+    /* Gallery Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+      justify-items: center;
+    }
+
+    .memory-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .memory-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .memory-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .memory-card .caption {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .memory-card .caption h3 {
+      font-size: 1.1rem;
+      color: #9c6b5b;
+      margin-bottom: 8px;
+    }
+
+    .memory-card .caption p {
+      font-size: 0.95rem;
+      color: #6b5b4a;
+      line-height: 1.6;
+    }
+
+    /* Portrait style for the last memory card — centered and taller */
+    .gallery .memory-card:last-child {
+      grid-column: 1 / -1;
+      justify-self: center;
+      max-width: 350px;
+    }
+
+    .gallery .memory-card:last-child img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb0 100%);
+      border-radius: 15px;
+      color: #fff;
+    }
+
+    .footer p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .footer .hearts {
+      font-size: 1.8rem;
+    }
+
+    /* Music Player */
+    .music-player {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255, 182, 193, 0.9);
+      padding: 10px 15px;
+      border-radius: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .music-player audio {
+      width: 200px;
+      outline: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .music-player audio {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Happy Anniversary ❤️</h1>
+      <p class="subtitle">Mummy ji & Papa ji</p>
+      <span class="years">Celebrating Beautiful Years of Love</span>
+    </div>
+
+    <!-- Personal Message -->
+    <div class="message">
+      <p>
+        To the two people who showed me what true caring and loving mean —<br>
+        thank you for every sacrifice, every laugh, and every moment.<br>
+        Here's to many more happy years together!
+      </p>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+
+      <div class="memory-card">
+        <img src="images/4.jpeg" alt="Timeless memories of togetherness">
+        <div class="caption">
+          <h3>Time may have changed, but this moment lives fresh in memory</h3>
+          <p>A glimpse of the beautiful journey you both are on together.</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="images/7.jpeg" alt="Moments that make everything worth it">
+        <div class="caption">
+          <h3>Every joyful moment together</h3>
+          <p>Through the sorrows, through the joy — always side by side.</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="images/3.jpeg" alt="Ever grateful for love like yours">
+        <div class="caption">
+          <h3>Still as radiant today</h3>
+          <p>Ever grateful to have such loving, beautiful parents ❤️</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="images/6.jpeg" alt="Everyday special moments">
+        <div class="caption">
+          <h3>The Little Things</h3>
+          <p>It's the ordinary moments that make life extraordinary.</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="images/5.jpeg" alt="Moments that prove true love">
+        <div class="caption">
+          <h3>Every argument, every make-up</h3>
+          <p>Those moments remind us of the endless love you share.</p>
+        </div>
+      </div>
+
+      <div class="memory-card">
+        <img src="images/8.jpeg" alt="Through ups and downs">
+        <div class="caption">
+          <h3>We stay together, no matter what</h3>
+          <p>This is what makes me love you both the most.</p>
+        </div>
+      </div>
+
+      <!-- Last Card — Centered Portrait -->
+      <div class="memory-card">
+        <img src="images/1.jpeg" alt="Happy anniversary wish">
+        <div class="caption">
+          <h3>Wishing you both a very Happy Anniversary!</h3>
+          <p>Forever my inspiration and my home ❤️</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        No matter how far I am or what I say, the place I'll always return to is you both — 
+        the loving and caring home that raised me. Time changes, but my faith in you never will. 
+        Happy Anniversary, my dearest Mata & Pita Ji!
+      </p>
+      <p><strong>Aryan Singh</strong></p>
+      <p class="hearts">💕💕💕</p>
+    </div>
+
+  </div>
+
+  <!-- Music Player -->
+  <div class="music-player">
+    <audio controls autoplay loop>
+      <source src="Song\ppdkp.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
